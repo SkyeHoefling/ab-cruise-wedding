@@ -1,1 +1,28 @@
-﻿
+﻿body {
+    width: 90%;
+    margin: auto;
+    background-color:transparent;
+}
+
+@font-face {
+    font-family: "PlayfairDisplay-Black";
+    src: url("/css/fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf") format("truetype");
+}
+
+.playfair-display {
+    font-family: "PlayfairDisplay-Black";
+}
+
+.title {
+    font-size: 40px;
+    height:80%;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.title span{
+    color: #FF0000;
+    margin-left: 5px;
+    margin-right: 5px;
+}
