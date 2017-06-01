@@ -15,6 +15,22 @@
     </environment>
 </head>
 <body>
+    <div data-sticky-container>
+        <div class="top-bar" data-sticky data-margin-top="0" id="menu">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li class="menu-text">Site Title</li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu" data-magellan>
+                    <li><a href="#first">One</a></li>
+                    <li><a href="#second">Two</a></li>
+                    <li><a href="#third">Three</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div>
         @RenderBody()
     </div>
