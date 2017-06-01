@@ -24,10 +24,6 @@
     transform: translateY(22%);
 }
 
-.top-bar .margin-left {
-    float:right;
-}
-
 .karla li a {
     text-decoration: none;
     color: #000000;
