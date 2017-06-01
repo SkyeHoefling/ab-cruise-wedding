@@ -13,6 +13,14 @@
     font-family: "PlayfairDisplay-Black";
 }
 
+.top-bar {
+    background-color: transparent;
+}
+
+.top-bar ul {
+    background-color: transparent;
+}
+
 .title {
     font-size: 40px;
     height:80%;
