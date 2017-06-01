@@ -13,3 +13,12 @@
     font-family: "PlayfairDisplay-Black";
 }
 
+@font-face {
+    font-family: "Karla";
+    src: url("/css/fonts/Karla/Karla-Regular.ttf") format("truetype");
+}
+
+.karla {
+    font-family: "Karla";
+}
+
