@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AB Cruise Wedding</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/foundation/css/foundation.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/lib/foundation/css/foundation.min.css" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+
+    <environment names="Development">
+        <script src="~/lib/foundation/js/vendor/jquery.js"></script>
+        <script src="~/lib/foundation/js/vendor/foundation.min.js"></script>        
+        <script src="~/lib/foundation/js/vendor/what-input.js"></script>
+        <script src="~/lib/foundation/js/app.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/lib/foundation/vendor/jquery.js"></script>
+        <script src="~/lib/foundation/vendor/foundation.min.js"></script>        
+        <script src="~/lib/foundation/vendor/what-input.js"></script>
+        <script src="~/lib/foundation/js/app.js"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
