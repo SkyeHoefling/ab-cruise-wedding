@@ -1,37 +1,24 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    width: 90%;
+    margin: auto;
+    background-color:transparent;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+@font-face {
+    font-family: "PlayfairDisplay-Black";
+    src: url("/css/fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf") format("truetype");
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
+.playfair-display {
+    font-family: "PlayfairDisplay-Black";
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+@font-face {
+    font-family: "Karla";
+    src: url("/css/fonts/Karla/Karla-Regular.ttf") format("truetype");
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
+.karla {
+    font-family: "Karla";
 }
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
-}
