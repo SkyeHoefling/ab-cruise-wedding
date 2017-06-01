@@ -4,7 +4,7 @@
     text-align: center;
 }
 
-.top-bar ul {
+.top-bar .desktop {
     background-color: #FFFFFF;
     display: inline-block;
     text-align: center;
@@ -12,7 +12,7 @@
 }
 
 @media (max-width: 1050px){
-    .top-bar ul {
+    .top-bar .desktop {
         transform: translateY(30%);
     }
 
