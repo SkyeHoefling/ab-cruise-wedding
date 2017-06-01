@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+.top-bar .mobile {
+    text-align: left;
+}
+
 .top-bar .desktop {
     background-color: #FFFFFF;
     display: inline-block;
