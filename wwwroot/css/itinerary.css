@@ -1,3 +1,11 @@
 .itinerary {
     margin-top: 20px;
 }
+
+.itinerary .columns {
+    padding:0;
+}
+
+.itinerary .card ul {
+    margin-bottom: 0;
+}
