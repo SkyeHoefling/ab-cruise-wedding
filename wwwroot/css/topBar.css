@@ -15,6 +15,13 @@
     transform: translateY(70%);
 }
 
+@media (max-width: 640px){
+    .hack-mobile-sticky {
+        position: sticky;
+        top:0;
+    }
+}
+
 @media (max-width: 1050px){
     .top-bar .desktop {
         transform: translateY(30%);
