@@ -19,10 +19,18 @@
 
 .destination ul li {
     font-family: "Karla";
-    font-size: 30px;
-    color: #65645f;
+    font-size: 30px;    
     margin-top:8px;
     margin-bottom: 8px;
+}
+
+.destination ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.destination ul li a {
+    text-decoration: none;
+    color: #65645f;
 }
 
 @media (max-width: 640px) {
