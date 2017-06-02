@@ -9,8 +9,17 @@
     src: url("/css/fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "PlayfairDisplay-Italic";
+    src: url("/css/fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf") format("truetype");
+}
+
 .playfair-display {
     font-family: "PlayfairDisplay-Black";
+}
+
+.playfair-display-italic {
+    font-family: "PlayfairDisplay-Italic";
 }
 
 @font-face {
