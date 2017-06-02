@@ -4,6 +4,10 @@
     color: #474747;
 }
 
+.destination img{
+    width: 100%;
+}
+
 .destination ul {
     list-style: none;
     width:76%;
