@@ -57,6 +57,11 @@
     color: #e76b71;
 }
 
+.destination-reveal ul li i.fi-at-sign{
+    margin-left:4px;
+    margin-right:4px;
+}
+
 @media (max-width: 640px) {
     .destination ul li {
         font-size: 25px;

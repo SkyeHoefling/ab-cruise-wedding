@@ -9,11 +9,23 @@
                 <div class="card-section">
                     <ul>
                         <li><a><img src="/images/icons/date.svg" />11/25/2017 - 12/3/2017</a></li>
-                        <li><a><img src="/images/icons/ship.svg" />Anthem of the Seas</a></li>
+                        <li><a data-open="destination-details-modal"><img src="/images/icons/ship.svg" />Anthem of the Seas</a></li>
                         <li><a data-open="travel-agent-modal"><img src="/images/icons/contact.svg" />Jason Poole</a></li>
                     </ul>
                     <div class="reveal destination-reveal" id="travel-agent-modal" data-reveal>
                         <h1>Travel Agent Contact</h1>
+                        <hr />
+                        <ul>
+                            <li><i class="fi-torso"></i>Jason Poole</li>
+                            <li><i class="fi-telephone"></i>615-497-9063</li>
+                            <li><i class="fi-address-book"></i>jason.poole<i class="fi-at-sign"></i>cruiseplanners.com</li>
+                        </ul>
+                        <button class="close-button" data-close aria-label="Close Modal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="reveal destination-reveal" id="destination-details-modal" data-reveal>
+                        <h1>Cruise Vacation Details</h1>
                         <hr />
                         <ul>
                             <li><i class="fi-torso"></i>Jason Poole</li>
