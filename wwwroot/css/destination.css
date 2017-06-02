@@ -33,27 +33,6 @@
     color: #65645f;
 }
 
-@media (max-width: 640px) {
-    .destination ul li {
-        font-size: 20px;
-    }
-    .destination .card-divider h3{
-        font-size: 30px;
-    }
-}
-
-@media (min-width: 641px) and (max-width:1039px){
-    .destination ul li {
-        font-size: 20px;
-    }
-    .destination .card-divider h3{
-        font-size: 30px;
-    }
-    .destination ul {
-        width:90%;
-    }
-}
-
 .destination-reveal h1{
     font-family: "PlayfairDisplay-Black";
     text-align: center;
@@ -62,7 +41,7 @@
 
 .destination-reveal ul{
     list-style: none;
-    width:76%;
+    width:90%;
     margin:auto;
 }
 
@@ -71,4 +50,35 @@
     font-size: 30px;    
     margin-top:8px;
     margin-bottom: 8px;
+}
+
+.destination-reveal ul li i{
+    margin-right: 20px;
+    color: #e76b71;
+}
+
+@media (max-width: 640px) {
+    .destination ul li {
+        font-size: 25px;
+        margin-bottom:10px;
+    }
+    .destination .card-divider h3{
+        font-size: 30px;
+    }
+    .destination-reveal ul li {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 641px) and (max-width:1039px){
+    .destination ul li {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .destination .card-divider h3{
+        font-size: 30px;
+    }
+    .destination ul {
+        width:90%;
+    }
 }
