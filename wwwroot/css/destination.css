@@ -70,6 +70,15 @@
     margin-right:4px;
 }
 
+.destination-reveal .row {
+    font-family: "Karla";
+    margin:25px;
+}
+
+.destination-reveal .signature {
+    color: #e76b71;
+}
+
 @media (max-width: 640px) {
     .destination ul li {
         font-size: 25px;
