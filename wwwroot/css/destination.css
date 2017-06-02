@@ -3,3 +3,13 @@
     text-align: center;
     color: #474747;
 }
+
+.destination ul {
+    list-style: none;
+    width:40%;
+    margin:auto;
+}
+
+.destination ul li img {
+    margin-right: 10px;
+}
