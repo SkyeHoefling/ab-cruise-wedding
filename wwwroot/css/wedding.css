@@ -26,6 +26,8 @@
   font-size:20px;
 }
 
-.wedding .column {
-  margin-bottom:0;
+@media (min-width: 641px) {
+    .wedding .column {
+    margin-bottom:0;
+    }
 }
