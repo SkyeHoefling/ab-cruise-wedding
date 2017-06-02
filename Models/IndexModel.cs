@@ -1,6 +1,6 @@
 using System;
 
-namespace ab_cruise_wedding.Models 
+namespace ABCruiseWedding.Models 
 {
     public class IndexModel 
     {

@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace ab_cruise_wedding.Models 
+namespace ABCruiseWedding.Models 
 {
     [JsonObject]
     public class CountdownModel 
