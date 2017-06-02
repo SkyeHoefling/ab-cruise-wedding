@@ -69,25 +69,25 @@
                 <div class="row small-up-2 medium-up-3 large-up-4">
                     <div class="column column-block">
                         <div class="countdown-item">
-                            <h2>@Model.Countdown.Days</h2>
+                            <h2 id="countdown-days">@Model.Countdown.Days</h2>
                             <h1>DAYS</h1>
                         </div>
                     </div>
                     <div class="column column-block">
                         <div class="countdown-item">
-                            <h2>@Model.Countdown.Hours</h2>
+                            <h2 id="countdown-hours">@Model.Countdown.Hours</h2>
                             <h1>HOURS</h1>
                         </div>
                     </div>
                     <div class="column column-block">
                         <div class="countdown-item">
-                            <h2>@Model.Countdown.Minutes</h2>
+                            <h2 id="countdown-minutes">@Model.Countdown.Minutes</h2>
                             <h1>MINUTES</h1>
                         </div>
                     </div>
                     <div class="column column-block">
                         <div class="countdown-item">
-                            <h2>@Model.Countdown.Seconds</h2>
+                            <h2 id="countdown-seconds">@Model.Countdown.Seconds</h2>
                             <h1>SECONDS</h1>
                         </div>
                     </div>
@@ -145,3 +145,25 @@
         </div>
     </section>
 </div>
+
+@section Scripts {
+    <script>
+        var getCountdown = 'http://' + window.location.host + '/home/GetCountdown';
+        var $days = $('#countdown-days');
+        var $hours = $('#countdown-hours');
+        var $minutes = $('#countdown-minutes');
+        var $seconds = $('#countdown-seconds');
+
+        setInterval(function(){
+            $.ajax({
+                type: 'get',
+                url: getCountdown
+            }).done(function(data){
+                $days.html(data.days);
+                $hours.html(data.hours);
+                $minutes.html(data.minutes);
+                $seconds.html(data.seconds);
+            });
+        }, 1000);
+    </script>
+}
