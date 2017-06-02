@@ -64,3 +64,14 @@
 .story .columns h1 span{
     font-family: "PlayfairDisplay-Italic";
 }
+
+.story .link {
+    width: 50%;
+    margin:auto;
+    display: block;
+    text-align: center;
+    color: #df6b72;
+    font-family: "Karla";
+    font-size:30px;
+    margin-bottom:20px;
+}
