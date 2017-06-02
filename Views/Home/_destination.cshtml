@@ -10,8 +10,20 @@
                     <ul>
                         <li><a><img src="/images/icons/date.svg" />11/25/2017 - 12/3/2017</a></li>
                         <li><a><img src="/images/icons/ship.svg" />Anthem of the Seas</a></li>
-                        <li><a><img src="/images/icons/contact.svg" />Jason Poole</a></li>
+                        <li><a data-open="travel-agent-modal"><img src="/images/icons/contact.svg" />Jason Poole</a></li>
                     </ul>
+                    <div class="reveal destination-reveal" id="travel-agent-modal" data-reveal>
+                        <h1>Travel Agent Contact</h1>
+                        <hr />
+                        <ul>
+                            <li>Jason Poole</li>
+                            <li>615-497-9063</li>
+                            <li>jason.poole@cruiseplanners.com</li>
+                        </ul>
+                        <button class="close-button" data-close aria-label="Close Modal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

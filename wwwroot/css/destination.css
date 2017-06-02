@@ -53,3 +53,22 @@
         width:90%;
     }
 }
+
+.destination-reveal h1{
+    font-family: "PlayfairDisplay-Black";
+    text-align: center;
+    color: #474747;
+}
+
+.destination-reveal ul{
+    list-style: none;
+    width:76%;
+    margin:auto;
+}
+
+.destination-reveal ul li{
+    font-family: "Karla";
+    font-size: 30px;    
+    margin-top:8px;
+    margin-bottom: 8px;
+}
