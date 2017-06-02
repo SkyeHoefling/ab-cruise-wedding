@@ -46,3 +46,11 @@
 .story .row {
     text-align: left;
 }
+
+.story .row .thumbnail {
+    width: 75%;
+    margin:auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
