@@ -9,3 +9,8 @@
 .itinerary .card ul {
     margin-bottom: 0;
 }
+
+.itinerary iframe{
+    width: 100%;
+    height: 800px;
+}
