@@ -50,3 +50,11 @@ section.module.anthem {
   background-image: url("/images/anthem.jpg");
   background-position-y: -150px;
 }
+
+.wedding {
+  text-align: center;
+}
+
+.wedding h1 span{
+  color: #df6b72;
+}
