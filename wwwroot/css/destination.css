@@ -1,0 +1,97 @@
+.destination .card-divider h3{
+    font-family: "PlayfairDisplay-Black";
+    text-align: center;
+    color: #474747;
+}
+
+.destination ul {
+    list-style: none;
+    width:76%;
+    margin:auto;
+}
+
+.destination ul li img {
+    margin-right: 20px;    
+    width: 30px;
+    height: 30px;
+
+}
+
+.destination ul li {
+    font-family: "Karla";
+    font-size: 30px;    
+    margin-top:8px;
+    margin-bottom: 8px;
+    color: #65645f;
+}
+
+.destination ul li[data-open]:hover {
+    background-color: #f0f0f0;
+}
+
+.destination ul li a {
+    text-decoration: none;
+    color: #65645f;
+}
+
+.destination-reveal h1{
+    font-family: "PlayfairDisplay-Black";
+    text-align: center;
+    color: #474747;
+}
+
+.destination-reveal ul{
+    list-style: none;
+    width:90%;
+    margin:auto;
+}
+
+.destination-reveal ul li{
+    font-family: "Karla";
+    font-size: 30px;    
+    margin-top:8px;
+    margin-bottom: 8px;
+}
+
+.destination-reveal ul li i{
+    margin-right: 20px;
+    color: #e76b71;
+}
+
+.destination-reveal ul li img {
+    margin-right: 20px;    
+    width: 30px;
+    height: 30px;
+
+}
+
+.destination-reveal ul li i.fi-at-sign{
+    margin-left:4px;
+    margin-right:4px;
+}
+
+@media (max-width: 640px) {
+    .destination ul li {
+        font-size: 25px;
+        margin-bottom:10px;
+    }
+    .destination .card-divider h3{
+        font-size: 30px;
+    }
+    .destination-reveal ul li {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 641px) and (max-width:1039px){
+    .destination ul li {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .destination .card-divider h3{
+        font-size: 30px;
+    }
+    .destination ul {
+        width:90%;
+    }
+}

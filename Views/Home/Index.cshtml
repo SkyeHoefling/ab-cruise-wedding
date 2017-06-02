@@ -8,96 +8,12 @@
         </section>
     </div>
     <section>
-        <div class="story">
-            <h1 class="playfair-display-italic">We're getting married!</h1>
-            <h2 class="playfair-display">How it happened</h2>
-            <div class="row">
-                <a class="thumbnail"><img alt="we're getting married" src="/images/savethedate.png" /></a>
-            </div>
-            <div class="row">
-                <div class="columns large-6">    
-                    <h1>Rebekah Guss <span>(Bride)</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar dolor risus, nec hendrerit magna aliquet in. Morbi laoreet libero quis malesuada porta. Vestibulum ac lorem fermentum, bibendum tellus et, elementum neque. Sed gravida, augue nec gravida fringilla, est lorem viverra nisi, id ultrices urna tellus in dui. Sed vel augue ac est suscipit porttitor. Aenean elementum purus quis nisi blandit interdum. Ut vestibulum magna ac molestie fringilla. Vestibulum iaculis tortor quis rhoncus congue. Fusce interdum elementum turpis vitae dictum. Sed sed magna orci.</p>
-                    <p>Nam quam erat, commodo faucibus facilisis at, euismod ac eros. Quisque quis quam sed ipsum tincidunt eleifend at nec purus. Ut a venenatis massa. Morbi vel lacus in magna pellentesque laoreet vitae non nunc. Nunc ac ipsum sed felis blandit sollicitudin. Mauris ultricies sed metus sit amet aliquet. Fusce porttitor ex fermentum orci maximus, ut commodo dolor iaculis. Vestibulum in augue fermentum, sodales erat eget, mattis diam. Pellentesque dignissim maximus nisi ultrices sodales. Ut sed justo pulvinar ante scelerisque pharetra a at diam. Vivamus finibus ut ipsum sed pharetra. Morbi id suscipit lorem. Nam ornare non lorem quis semper. In at sem arcu. Nunc molestie tellus sed magna consequat hendrerit. Cras quis tellus eu odio porta aliquet.</p>
-                </div>
-                <div class="columns large-6">
-                    <h1>Andrew Hoefling <span>(Groom)</span></h1>
-                    <p>Praesent et sagittis sem. Mauris ac enim nisl. Aliquam lacinia pellentesque leo, vitae fringilla ante facilisis et. Morbi felis massa, faucibus vitae interdum at, efficitur a metus. Praesent semper hendrerit ornare. Nunc et dolor scelerisque, aliquam elit ac, vestibulum tellus. Nam sodales tortor non odio ullamcorper, vitae vestibulum arcu porttitor. Proin ac leo malesuada, aliquet massa sed, pellentesque tellus. Cras ligula nisl, pulvinar faucibus erat et, laoreet convallis felis. Nunc sollicitudin vitae metus vel finibus. Maecenas blandit ultricies risus et porttitor. Donec at enim quam. Vestibulum vehicula tellus vitae eros suscipit, mattis vehicula lacus tempus. Curabitur sit amet condimentum nulla. Nunc maximus euismod felis eu fermentum.</p>
-                    <p>Vivamus est elit, posuere et urna id, ultricies condimentum dolor. Maecenas convallis leo in dolor accumsan, molestie faucibus mauris pulvinar. Praesent tristique arcu neque, eu efficitur dolor eleifend vitae. Sed scelerisque mauris quis tellus congue commodo. Suspendisse sapien lectus, fermentum dictum tortor non, posuere sollicitudin diam. Cras mollis lectus vitae velit mollis, ullamcorper interdum dolor blandit. Etiam at maximus nunc, eu sagittis libero.</p>
-                </div>
-            </div>
-            <div class="row">
-                <a class="link" data-open="engagement-photos">View Gallery of Photos<img src="/images/right_arrow.svg" /></a>
-                <div class="large reveal" id="engagement-photos" data-reveal>
-                    <h1>Engagement Photos</h1>
-                    <div class="row small-up-2 medium-up-3 large-up-4">
-                        <div class="column column-block">
-                            <div class="thumbnail">
-                                <img src="images/empress-1.jpg" />
-                            </div>
-                        </div>
-                        <div class="column column-block">
-                            <div class="thumbnail">
-                                <img src="images/empress-2.jpg" />
-                            </div>
-                        </div>
-                        <div class="column column-block">
-                            <div class="thumbnail">
-                                <img src="images/empress-3.jpg" />
-                            </div>
-                        </div>
-                        <div class="column column-block">
-                            <div class="thumbnail">
-                                <img src="images/savethedate_full.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <button class="close-button" data-close aria-label="Close Gallery" type="button">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
+        @Html.Partial("_story");
     </section>
     
     <section id="wedding" data-magellan-target="wedding">
-        <div class="wedding">
-            <h2 class="playfair-display">Our Wedding</h2>
-            <h1 class="playfair-display-italic">Sunday, <span>26 November</span> 2017</h3>
-            <div class="row">
-                <hr />
-                <div class="row small-up-2 medium-up-4 large-up-4">
-                    <div class="column column-block">
-                        <div class="countdown-item">
-                            <h2 id="countdown-days">@Model.Countdown.Days</h2>
-                            <h1>DAYS</h1>
-                        </div>
-                    </div>
-                    <div class="column column-block">
-                        <div class="countdown-item">
-                            <h2 id="countdown-hours">@Model.Countdown.Hours</h2>
-                            <h1>HOURS</h1>
-                        </div>
-                    </div>
-                    <div class="column column-block">
-                        <div class="countdown-item">
-                            <h2 id="countdown-minutes">@Model.Countdown.Minutes</h2>
-                            <h1>MINUTES</h1>
-                        </div>
-                    </div>
-                    <div class="column column-block">
-                        <div class="countdown-item">
-                            <h2 id="countdown-seconds">@Model.Countdown.Seconds</h2>
-                            <h1>SECONDS</h1>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-            </div>
-            <div class="row">
-                <p>Vivamus est elit, posuere et urna id, ultricies condimentum dolor. Maecenas convallis leo in dolor accumsan, molestie faucibus mauris pulvinar. Praesent tristique arcu neque, eu efficitur dolor eleifend vitae. Sed scelerisque mauris quis tellus congue commodo. Suspendisse sapien lectus, fermentum dictum tortor non, posuere sollicitudin diam. Cras mollis lectus vitae velit mollis, ullamcorper interdum dolor blandit. Etiam at maximus nunc, eu sagittis libero.</p>
-            </div>
-        </div>
+        @Html.Partial("_wedding", Model.Countdown);
+        @Html.Partial("_destination");
     </section>
     
     <section id="itinerary" class="module parallax cuba" data-magellan-target="itinerary">
