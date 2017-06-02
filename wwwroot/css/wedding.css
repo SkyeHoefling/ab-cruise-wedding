@@ -1,0 +1,33 @@
+.wedding {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wedding h1 span{
+  color: #df6b72;
+}
+
+.wedding .countdown-item {
+  background-color: #eeeeed;
+  padding-bottom:30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.wedding .countdown-item h2 {
+  font-family: "PlayfairDisplay-Black";
+  color: #df6b72;
+  font-size: 70px;
+}
+
+.wedding .countdown-item h1 {
+  font-family: "Karla";
+  color: #4e4e4e;
+  font-size:20px;
+}
+
+@media (min-width: 641px) {
+    .wedding .column {
+    margin-bottom:0;
+    }
+}
