@@ -42,3 +42,7 @@
 .story h2 {
     color: #474747;
 }
+
+.story .row {
+    text-align: left;
+}
