@@ -22,3 +22,11 @@
     font-family: "Karla";
 }
 
+.parallax {
+    background-image: url("/images/beach.jpg");
+    background-attachment: fixed;
+    background-position: top -300px center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:500px;
+}
