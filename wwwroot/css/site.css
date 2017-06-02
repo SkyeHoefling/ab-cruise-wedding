@@ -54,3 +54,12 @@
     margin-top: 20px;
     margin-bottom: 40px;
 }
+
+.story .columns h1 {
+    color:#474747;
+    font-family: "PlayfairDisplay-Black";
+}
+
+.story .columns h1 span{
+    font-family: "PlayfairDisplay-Italic";
+}
