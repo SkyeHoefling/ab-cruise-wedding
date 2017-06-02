@@ -24,3 +24,24 @@
     margin-top:8px;
     margin-bottom: 8px;
 }
+
+@media (max-width: 640px) {
+    .destination ul li {
+        font-size: 20px;
+    }
+    .destination .card-divider h3{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 641px) and (max-width:1039px){
+    .destination ul li {
+        font-size: 20px;
+    }
+    .destination .card-divider h3{
+        font-size: 30px;
+    }
+    .destination ul {
+        width:90%;
+    }
+}
