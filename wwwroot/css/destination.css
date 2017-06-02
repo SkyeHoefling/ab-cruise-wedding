@@ -6,10 +6,18 @@
 
 .destination ul {
     list-style: none;
-    width:40%;
+    width:76%;
     margin:auto;
 }
 
 .destination ul li img {
-    margin-right: 10px;
+    margin-right: 20px;    
+    width: 30px;
+    height: 30px;
+}
+
+.destination ul li {
+    font-family: "Karla";
+    font-size: 30px;
+    color: #65645f;
 }
