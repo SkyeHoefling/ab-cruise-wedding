@@ -48,4 +48,5 @@ section.module.beach {
 }
 section.module.anthem {
   background-image: url("/images/anthem.jpg");
+  background-position-y: -150px;
 }
