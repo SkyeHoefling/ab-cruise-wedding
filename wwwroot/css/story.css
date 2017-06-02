@@ -1,5 +1,6 @@
 .story {
     text-align: center;
+    margin-top: 60px;
 }
 
 .story h1 {
@@ -40,7 +41,7 @@
     color: #df6b72;
     font-family: "Karla";
     font-size:30px;
-    margin-bottom:70px;
+    margin-bottom:150px;
 }
 
 #engagement-photos h1{
