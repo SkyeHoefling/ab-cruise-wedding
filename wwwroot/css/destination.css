@@ -4,6 +4,10 @@
     color: #474747;
 }
 
+.destination img{
+    width: 100%;
+}
+
 .destination ul {
     list-style: none;
     width:76%;
@@ -68,6 +72,15 @@
 .destination-reveal ul li i.fi-at-sign{
     margin-left:4px;
     margin-right:4px;
+}
+
+.destination-reveal .row {
+    font-family: "Karla";
+    margin:25px;
+}
+
+.destination-reveal .signature {
+    color: #e76b71;
 }
 
 @media (max-width: 640px) {
