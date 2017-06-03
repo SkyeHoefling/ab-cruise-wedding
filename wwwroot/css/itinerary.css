@@ -10,6 +10,13 @@
     margin-bottom: 0;
 }
 
+.itinerary .accordion-title {
+    color:#474747;
+    font-family: "PlayfairDisplay-Black";
+    font-size: 30px;
+    text-align: center;
+}
+
 .itinerary iframe{
     width: 100%;
     height: 800px;
