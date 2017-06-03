@@ -15,3 +15,17 @@
     font-size: 35px;
     text-align: center;
 }
+
+.rsvp form {
+    margin-top:25px;
+}
+
+.rsvp .button {
+    margin-top:25px;
+    width: 100%;
+}
+
+.rsvp .large-6 {
+    text-align: center;
+    margin-bottom: 20px;
+}
