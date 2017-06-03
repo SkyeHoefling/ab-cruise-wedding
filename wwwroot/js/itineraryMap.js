@@ -4,10 +4,11 @@ itineraryMap = {
     $cococay: null,
     $nassau: null,
     $map: null,
+    $view: null,
     initialize: function(){
         itineraryMap.$newYork = ol.proj.fromLonLat([-74.072564, 40.665126]);
 
-        var view = new ol.View({
+        itineraryMap.$view = new ol.View({
             center: itineraryMap.$newYork,
             zoom: 10
         });
@@ -21,11 +22,17 @@ itineraryMap = {
           })
         ],
         loadTilesWhileAnimating: true,
-        view: view
+        view: itineraryMap.$view
       });
 
       var height = $('.itinerary .columns:first').height();
       $('#map').height(height);
       itineraryMap.$map.updateSize();
+    },
+    panMap: function(location){
+        itineraryMap.$view.animate({
+            center: location,
+            duration:3000
+        });
     }
 };
