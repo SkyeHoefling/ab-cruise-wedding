@@ -36,15 +36,25 @@ itineraryMap = {
     },
     panMap: function(location, zoom){
         var currentZoom = null;
+        var duration= 4000;
+
         if(zoom != undefined){
             currentZoom = zoom;
         } else {
             currentZoom = itineraryMap.$zoom;
         }
 
+        if((itineraryMap.$newYork[0] == itineraryMap.$view.getCenter()[0] &&
+            itineraryMap.$newYork[1] == itineraryMap.$view.getCenter()[1]) ||
+           (itineraryMap.$newYork[0] == location[0] &&
+            itineraryMap.$newYork[1] == location[1]) )
+        {
+            duration = 8000;
+        }
+
         itineraryMap.$view.animate({
             center: location,
-            duration:3000,
+            duration:duration,
             zoom: currentZoom
         });
     }
