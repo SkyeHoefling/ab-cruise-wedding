@@ -26,7 +26,7 @@
 }
 
 .itinerary .accordion-content ul {
-    width: 75%;
+    width: 85%;
     margin: auto;
     list-style: none;
 }
@@ -50,6 +50,7 @@
 
 .itinerary .accordion-content ul li ul {
     margin-left: 0px;
+    margin-right: 0px;
 }
 
 .itinerary .accordion-content ul li ul li {
