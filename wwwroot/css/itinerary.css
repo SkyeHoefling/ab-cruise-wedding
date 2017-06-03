@@ -21,10 +21,18 @@
     color: #f46d72;
 }
 
+.itinerary .accordion-content a {
+    color: #f46d72;
+}
+
 .itinerary .accordion-content ul {
     width: 75%;
     margin: auto;
     list-style: none;
+}
+
+.itinerary .accordion-content ul li {
+    font-family: "PlayfairDisplay-Black";
 }
 
 .itinerary .accordion-content ul li::before {
@@ -37,11 +45,15 @@
     content: "\22EE";
     color: #f46d72;
     margin-left:-5px;
-    padding-right: 15px;
+    padding-right: 16px;
 }
 
 .itinerary .accordion-content ul li ul {
     margin-left: 0px;
+}
+
+.itinerary .accordion-content ul li ul li {
+    font-family: "PlayfairDisplay-Regular";
 }
 
 .itinerary iframe{
