@@ -23,5 +23,9 @@ itineraryMap = {
         loadTilesWhileAnimating: true,
         view: view
       });
+
+      var height = $('.itinerary .columns:first').height();
+      $('#map').height(height);
+      itineraryMap.$map.updateSize();
     }
 };
