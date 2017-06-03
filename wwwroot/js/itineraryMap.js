@@ -17,22 +17,52 @@ itineraryMap = {
             center: itineraryMap.$newYork,
             zoom: itineraryMap.$zoom
         });
+        var vectorLayer = itineraryMap.getMarkers();
 
         itineraryMap.$map = new ol.Map({
-        target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            preload: 4,
-            source: new ol.source.OSM()
-          })
-        ],
-        loadTilesWhileAnimating: true,
-        view: itineraryMap.$view
-      });
+            target: 'map',
+            layers: [
+                new ol.layer.Tile({
+                    preload: 4,
+                    source: new ol.source.OSM()
+                }),
+                vectorLayer
+            ],
+            loadTilesWhileAnimating: true,
+            view: itineraryMap.$view
+        });
 
-      var height = $('.itinerary .columns:first').height();
-      $('#map').height(height);
-      itineraryMap.$map.updateSize();
+        var height = $('.itinerary .columns:first').height();
+        $('#map').height(height);
+        itineraryMap.$map.updateSize();
+    },
+    getMarkers: function(){
+        var markers = [
+            new ol.Feature({
+                type: 'icon',
+                geometry: new ol.geom.Point(itineraryMap.$newYork)
+            }),
+            new ol.Feature({
+                type: 'icon',
+                geometry: new ol.geom.Point(itineraryMap.$florida)
+            }),
+            new ol.Feature({
+                type: 'icon',
+                geometry: new ol.geom.Point(itineraryMap.$cococay)
+            }),
+            new ol.Feature({
+                type: 'icon',
+                geometry: new ol.geom.Point(itineraryMap.$nassau)
+            })
+        ];
+
+        var vectorLayer = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                features: markers
+            })
+        });
+
+        return vectorLayer;
     },
     panMap: function(location, zoom){
         var currentZoom = null;
