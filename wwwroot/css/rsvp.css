@@ -1,3 +1,17 @@
 .rsvp {
     margin-top: 25px;
 }
+
+.rsvp h1 {
+    font-family: 'PlayfairDisplay-Italic';
+    color: #df6b72;
+    font-size: 50px;
+    text-align: center;
+}
+
+.rsvp h2 {
+    font-family: "PlayfairDisplay-Black";
+    color: #4e4e4e;
+    font-size: 35px;
+    text-align: center;
+}
