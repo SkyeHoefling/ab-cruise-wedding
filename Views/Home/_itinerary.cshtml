@@ -1,0 +1,135 @@
+<div class="itinerary row">
+    <div class="card">
+        <div class="columns large-5 medium-12 small-12">
+            <ul class="accordion" data-accordion>
+                <li class="accordion-item is-active" data-accordion-item onclick="itineraryMap.panMap(itineraryMap.$newYork);">
+                    <a href="#" class="accordion-title">Port Liberty, NJ - Day 1</a>
+                    <div class="accordion-content" data-tab-content>
+                        <ul>
+                            <li>All Aboard
+                                <ul>
+                                    <li>Terminal Building</li>
+                                    <li>3:00 PM</li>
+                                    <li><a href="http://www.cruiseliberty.com/">Website</a></li>
+                                </ul>
+                            </li>
+                            <li>To Be Decided
+                                <ul>
+                                    <li>Schedule is still be worked on</li>
+                                    <li><a data-open="itinerary-details-modal">Details</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">Wedding - Day 2</a>
+                    <div class="accordion-content" data-tab-content>
+                        <ul>
+                            <li>To Be Decided
+                                <ul>
+                                    <li>Schedule is still be worked on</li>
+                                    <li><a data-open="itinerary-details-modal">Details</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item onclick="itineraryMap.panMap(itineraryMap.$florida);">
+                    <a href="#" class="accordion-title">Port Canaveral, FL - Day 3</a>
+                    <div class="accordion-content" data-tab-content>
+                        <ul>
+                            <li>To Be Decided
+                                <ul>
+                                    <li>Schedule is still be worked on</li>
+                                    <li><a data-open="itinerary-details-modal">Details</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item onclick="itineraryMap.panMap(itineraryMap.$cococay, 15);">
+                    <a href="#" class="accordion-title">CocoCay, Bahamas - Day 4</a>
+                    <div class="accordion-content" data-tab-content>
+                        <ul>
+                            <li>To Be Decided
+                                <ul>
+                                    <li>Schedule is still be worked on</li>
+                                    <li><a data-open="itinerary-details-modal">Details</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item onclick="itineraryMap.panMap(itineraryMap.$nassau, 12);">
+                    <a href="#" class="accordion-title">Nassau, Bahamas - Day 5</a>
+                    <div class="accordion-content" data-tab-content>
+                        <ul>
+                            <li>To Be Decided
+                                <ul>
+                                    <li>Schedule is still be worked on</li>
+                                    <li><a data-open="itinerary-details-modal">Details</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">Day at Sea - Day 6</a>
+                    <div class="accordion-content" data-tab-content>
+                        <ul>
+                            <li>To Be Decided
+                                <ul>
+                                    <li>Schedule is still be worked on</li>
+                                    <li><a data-open="itinerary-details-modal">Details</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">Day at Sea - Day 7</a>
+                    <div class="accordion-content" data-tab-content>
+                        <ul>
+                            <li>To Be Decided
+                                <ul>
+                                    <li>Schedule is still be worked on</li>
+                                    <li><a data-open="itinerary-details-modal">Details</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item onclick="itineraryMap.panMap(itineraryMap.$newYork);">
+                    <a href="#" class="accordion-title">Port Liberty, NJ - Day 8</a>
+                    <div class="accordion-content" data-tab-content>
+                        <ul>
+                            <li>To Be Decided
+                                <ul>
+                                    <li>Schedule is still be worked on</li>
+                                    <li><a data-open="itinerary-details-modal">Details</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="reveal destination-reveal" id="itinerary-details-modal" data-reveal>
+                <h1>Itinerary Details</h1>
+                <hr />
+                <div class="row">
+                    We are currently still working with our Travel Agent to determine the daily itinerary. Once we have that information we will be updating the website, please check back soon.
+                </div>
+                <div class="row signature">
+                    -Andrew &amp; Bekah
+                </div>
+                <button class="close-button" data-close aria-label="Close Modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <div class="columns large-7 medium-12 small-12">
+            <div id="map" class="map"></div>
+        </div>
+    </div>
+</div>
