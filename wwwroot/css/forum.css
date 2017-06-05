@@ -18,10 +18,12 @@
 }
 
 .forum .row {
-    text-align: center;
-    color: red;
+    text-align: center;    
 }
 
 .forum .row a {
     text-decoration: none;
+    color: #df6b72;
+    font-family: "Karla";
+    font-size:2rem;
 }
