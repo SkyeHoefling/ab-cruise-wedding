@@ -10,6 +10,11 @@
     margin-bottom: 25px;
 }
 
+.registry .card-divider h3{
+    font-family: "PlayfairDisplay-Black";
+    color: #474747;
+}
+
 .registry .column {
     padding:0;
 }
