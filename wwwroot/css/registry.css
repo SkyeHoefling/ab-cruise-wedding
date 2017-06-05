@@ -1,0 +1,68 @@
+.registry {
+    margin-top: 50px;
+}
+
+.registry h1 {
+    font-family: "PlayfairDisplay-Black";
+    color: #4e4e4e;
+    font-size:2.1875rem;
+    text-align: center;   
+    margin-bottom: 25px;
+}
+
+.registry .column {
+    padding:0;
+}
+
+.registry .card-divider img {
+    margin-right: 5px;
+}
+
+.registry .column img {
+    width: 100%;
+}
+
+.registry ul {
+    list-style: none;
+    width:76%;
+    margin:auto;
+}
+
+.registry ul li {
+    font-family: "Karla";
+    font-size: 30px;    
+    margin-top:8px;
+    margin-bottom: 8px;
+    color: #65645f;
+    padding-left:10px;
+}
+
+.registry i {
+    color: red;
+    margin-right: 25px;
+}
+
+.registry ul li[data-open]:hover{
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 640px) {
+    .registry ul li {
+        font-size: 25px;
+        margin-bottom:10px;
+    }
+    .registry-reveal ul li {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 641px) and (max-width:1039px){
+    .registry ul li {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .registry ul {
+        width:90%;
+    }
+    
+}
