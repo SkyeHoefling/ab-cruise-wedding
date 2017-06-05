@@ -1,5 +1,7 @@
 .rsvp {
     margin-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .rsvp h1 {
@@ -20,7 +22,7 @@
     text-align: center;
     font-family: "Karla";
     color: #777673;
-    width: 50%;
+    width: 85%;
     margin:auto;
 }
 
