@@ -13,7 +13,8 @@
       "wwwroot/css/destination.css",
       "wwwroot/css/itinerary.css",
       "wwwroot/css/rsvp.css",
-      "wwwroot/css/registry.css"
+      "wwwroot/css/registry.css",
+      "wwwroot/css/forum.css"
     ]
   },
   {
