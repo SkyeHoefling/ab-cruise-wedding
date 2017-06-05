@@ -50,3 +50,9 @@ section.module.anthem {
   background-image: url("/images/anthem.jpg");
   background-position-y: -150px;
 }
+
+@media (max-width:1300px){
+  section.module.anthem{
+    background-position-y:0px;
+  }
+}
