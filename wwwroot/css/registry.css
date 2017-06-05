@@ -18,6 +18,10 @@
     margin-right: 5px;
 }
 
+.registry .column img {
+    width: 100%;
+}
+
 .registry ul {
     list-style: none;
     width:76%;
@@ -50,10 +54,6 @@
     .registry-reveal ul li {
         font-size: 24px;
     }
-    .registry .column img {
-        margin-right: 5px;
-        width: 100%;
-    }
 }
 
 @media (min-width: 641px) and (max-width:1039px){
@@ -64,4 +64,5 @@
     .registry ul {
         width:90%;
     }
+    
 }
