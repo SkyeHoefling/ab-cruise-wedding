@@ -1,0 +1,29 @@
+.forum {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.forum h1 {
+    font-family: "PlayfairDisplay-Black";
+    color: #4e4e4e;
+    font-size:2.1875rem;
+    text-align: center;   
+    margin-bottom: 25px;
+}
+
+.forum .row p{
+    text-align: center;
+    color:#777673;
+    font-family: "Karla";
+}
+
+.forum .row {
+    text-align: center;    
+}
+
+.forum .row a {
+    text-decoration: none;
+    color: #df6b72;
+    font-family: "Karla";
+    font-size:2rem;
+}
