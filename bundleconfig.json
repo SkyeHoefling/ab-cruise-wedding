@@ -12,7 +12,8 @@
       "wwwroot/css/wedding.css",
       "wwwroot/css/destination.css",
       "wwwroot/css/itinerary.css",
-      "wwwroot/css/rsvp.css"
+      "wwwroot/css/rsvp.css",
+      "wwwroot/css/registry.css"
     ]
   },
   {
