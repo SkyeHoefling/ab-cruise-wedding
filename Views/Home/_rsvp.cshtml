@@ -3,7 +3,7 @@
         <h1>R&#233;spondez s'il vous pla&#238;t</h1>
         <h2>RSVP</h2>
         <p>RSVP by contacting the travel agent or filling out this form. Once you complete the form you will be contacted by the travel agent for confirmation.</p>
-        <form>
+        <form id="rsvp-form">
             <fieldset class="row">
                 <div class="columns small-12 large-6 medium-6">
                     <input id="checkbox1" type="checkbox"><label for="checkbox1">Ready to Book</label></input>
@@ -41,7 +41,7 @@
                     </label>
                 </div>
                 <div class="columns small-12 large-4 medium-4">
-                    <a class="button">Send RSVP</a>
+                    <a onclick="mailto();" class="button">Send RSVP</a>
                 </div>
             </div>
         </form>
