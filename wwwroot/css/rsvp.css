@@ -16,6 +16,14 @@
     text-align: center;
 }
 
+.rsvp p {
+    text-align: center;
+    font-family: "Karla";
+    color: #777673;
+    width: 50%;
+    margin:auto;
+}
+
 .rsvp form {
     margin-top:25px;
 }
