@@ -1,5 +1,8 @@
+@using ABCruiseWedding.Models
+@model IndexModel
+
 <div class="story">
-    <h1 class="playfair-display-italic">We're getting married!</h1>
+    <h1 class="playfair-display-italic">We got married!</h1>
     <h2 class="playfair-display">How it happened</h2>
     <div class="row">
         <a class="thumbnail"><img alt="we're getting married" src="/images/savethedate.png" /></a>
@@ -31,26 +34,14 @@
         <div class="large reveal" id="engagement-photos" data-reveal>
             <h1>Engagement Photos</h1>
             <div class="row small-up-2 medium-up-3 large-up-4">
-                <div class="column column-block">
-                    <div class="thumbnail">
-                        <img src="images/empress-1.jpg" />
+                @foreach(var image in Model.Images)
+                {
+                    <div class="column column-block">
+                        <div class="thumbnail">
+                            <img src="@image" />
+                        </div>
                     </div>
-                </div>
-                <div class="column column-block">
-                    <div class="thumbnail">
-                        <img src="images/empress-2.jpg" />
-                    </div>
-                </div>
-                <div class="column column-block">
-                    <div class="thumbnail">
-                        <img src="images/empress-3.jpg" />
-                    </div>
-                </div>
-                <div class="column column-block">
-                    <div class="thumbnail">
-                        <img src="images/savethedate_full.png" />
-                    </div>
-                </div>
+                }
             </div>
             <button class="close-button" data-close aria-label="Close Gallery" type="button">
                 <span aria-hidden="true">&times;</span>

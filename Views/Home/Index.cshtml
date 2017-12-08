@@ -1,4 +1,5 @@
-﻿@model ABCruiseWedding.Models.IndexModel
+﻿@using ABCruiseWedding.Models
+@model IndexModel
 @{
     ViewData["Title"] = "";
 }
@@ -8,7 +9,7 @@
         </section>
     </div>
     <section>
-        @Html.Partial("_story")
+        @Html.Partial("_story", Model)
     </section>
     
     <section id="wedding" data-magellan-target="wedding">
