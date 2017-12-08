@@ -33,7 +33,7 @@ namespace ABCruiseWedding.Controllers
         }
 
         public CountdownModel GetCountdown(){
-            var weddingDate = new DateTime(2017,11,26,15,0,0);
+            var weddingDate = new DateTime(2018,5,13,12,0,0);
             var currentDate = DateTime.Now;
             var difference = weddingDate.Subtract(currentDate);
 
