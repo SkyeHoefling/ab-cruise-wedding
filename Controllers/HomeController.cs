@@ -29,7 +29,7 @@ namespace ABCruiseWedding.Controllers
             var model = new IndexModel
             {
                 Countdown = GetCountdown(),
-                Images = data
+                EngagementImages = data
             };
 
             return View(model);
