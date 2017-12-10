@@ -7,5 +7,6 @@ namespace ABCruiseWedding.Models
     {
         public CountdownModel Countdown { get; set; }
         public IEnumerable<ImageModel> EngagementImages { get; set; }
+        public IEnumerable<ImageModel> WeddingImages { get; set; }
     }
 }

@@ -55,6 +55,20 @@
                         </div>
                     </div>
                     <div class="tabs-panel" id="wedding-panel">
+                        <h1>Wedding Photos</h1>            
+                        <div class="row small-up-2 medium-up-3 large-up-4">
+                            @foreach(var image in Model.WeddingImages)
+                            {
+                                <div class="column column-block">
+                                    <div class="card">
+                                        <img src="@image.Uri" />
+                                        <div class="card-divider">
+                                            @image.Description
+                                        </div>        
+                                    </div>
+                                </div>
+                            }
+                        </div>
                     </div>
                 </div>
             </div>            
