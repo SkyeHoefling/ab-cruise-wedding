@@ -32,20 +32,35 @@
     <div class="row">
         <a class="link" data-open="engagement-photos">View Gallery of Photos<img src="/images/right_arrow.svg" /></a>
         <div class="large reveal" id="engagement-photos" data-reveal>
-            <h1>Engagement Photos</h1>
-            <div class="row small-up-2 medium-up-3 large-up-4">
-                @foreach(var image in Model.Images)
-                {
-                    <div class="column column-block">
-                        <div class="card">
-                            <img src="@image.Uri" />
-                            <div class="card-divider">
-                                @image.Description
-                            </div>        
+            <div class="row">
+                <ul class="tabs" data-tabs id="gallery-tabs">
+                    <li class="tabs-title is-active"><a href="#engagement-panel" aria-selected="true">Engagement Photos</a></li>
+                    <li class="tabs-title"><a href="#wedding-panel">Wedding Photos</a></li>
+                    <li class="tabs-title"><a href="#beach-panel">Beach Photos</a></li>
+                </ul>
+                <div class="tabs-content" data-tabs-content="gallery-tabs">
+                    <div class="tabs-panel is-active" id="engagement-panel">
+                        <h1>Engagement Photos</h1>            
+                        <div class="row small-up-2 medium-up-3 large-up-4">
+                            @foreach(var image in Model.Images)
+                            {
+                                <div class="column column-block">
+                                    <div class="card">
+                                        <img src="@image.Uri" />
+                                        <div class="card-divider">
+                                            @image.Description
+                                        </div>        
+                                    </div>
+                                </div>
+                            }
                         </div>
                     </div>
-                }
-            </div>
+                    <div class="tabs-panel" id="wedding-panel">
+                    </div>
+                    <div class="tabs-panel" id="beach-panel">
+                    </div>
+                </div>
+            </div>            
             <button class="close-button" data-close aria-label="Close Gallery" type="button">
                 <span aria-hidden="true">&times;</span>
             </button>
