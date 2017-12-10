@@ -37,8 +37,11 @@
                 @foreach(var image in Model.Images)
                 {
                     <div class="column column-block">
-                        <div class="thumbnail">
-                            <img src="@image" />
+                        <div class="card">
+                            <img src="@image.Uri" />
+                            <div class="card-divider">
+                                @image.Description
+                            </div>        
                         </div>
                     </div>
                 }
