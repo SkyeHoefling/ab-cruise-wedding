@@ -55,8 +55,30 @@
                         </div>
                     </div>
                     <div class="tabs-panel" id="wedding-panel">
-                        <h1>Wedding Photos</h1>            
-                        <div class="row small-up-2 medium-up-3 large-up-4">
+                        <h1>Wedding Photos</h1>
+                        <table id="gallery" class="table">
+                            <thead>
+                                <tr>
+                                    <th>image</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach(var image in Model.WeddingImages)
+                                {
+                                    <tr>
+                                        <td>
+                                            <div class="card">
+                                                <img src="@image.Uri" />
+                                                <div class="card-divider">
+                                                    @image.Description
+                                                </div>        
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <!-- <div class="row small-up-2 medium-up-3 large-up-4">
                             @foreach(var image in Model.WeddingImages)
                             {
                                 <div class="column column-block">
@@ -68,7 +90,7 @@
                                     </div>
                                 </div>
                             }
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>            

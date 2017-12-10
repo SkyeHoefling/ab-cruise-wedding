@@ -21,7 +21,8 @@
     "outputFileName": "wwwroot/js/site.min.js",
     "inputFiles": [
       "wwwroot/js/site.js",
-      "wwwroot/js/itineraryMap.js"
+      "wwwroot/js/itineraryMap.js",
+      "wwwroot/js/gallery.js"
     ],
     // Optionally specify minification options
     "minify": {
