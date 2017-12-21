@@ -70,6 +70,7 @@ table.cards {
 .cards tbody td {
     display: block;
     width: 16em;
+    height: 22em;    
     overflow: hidden;
     text-align: left;
 }
