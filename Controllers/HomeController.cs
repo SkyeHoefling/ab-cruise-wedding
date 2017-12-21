@@ -14,21 +14,8 @@ namespace ABCruiseWedding.Controllers
         {
             var imageService = new ImageService();
 
-            var engagementImages = (await imageService.GetImages("engagement-sm"))
-                .Select(async x => new ImageModel
-                {
-                    Uri = x,
-                    Description = await imageService.GetDescription(x)
-                })
-                .Select(t => t.Result);
-
-            var weddingImages = (await imageService.GetImages("photos-sm"))
-                .Select(async x => new ImageModel
-                {
-                    Uri = x,
-                    Description = await imageService.GetDescription(x)
-                })
-                .Select(t => t.Result);
+            var engagementImages = processImages(await imageService.GetImages("engagement-sm"));
+            var weddingImages = processImages(await imageService.GetImages("photos-sm"));
 
             var model = new IndexModel
             {
@@ -37,7 +24,18 @@ namespace ABCruiseWedding.Controllers
                 WeddingImages = weddingImages
             };
 
-            return View(model);          
+            return View(model);  
+
+            IEnumerable<ImageModel> processImages(IEnumerable<string> images)
+            {
+                return images
+                    .Select(async x => new ImageModel
+                    {
+                        Uri = x,
+                        Description = await imageService.GetDescription(x)
+                    })
+                    .Select(t => t.Result);
+            }        
         }
 
         public CountdownModel GetCountdown(){
