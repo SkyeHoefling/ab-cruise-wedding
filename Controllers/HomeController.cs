@@ -18,14 +18,15 @@ namespace ABCruiseWedding.Controllers
                 .Select(x => new ImageModel
                 {
                     Uri = x,
-                    Description = string.Empty// imageService.GetDescription(x)
+                    Description = imageService.GetDescription(x).Result
                 });
 
             var weddingImages = (await imageService.GetImages("photos"))
                 .Select(x => new ImageModel
                 {
                     Uri = x,
-                    Description = string.Empty//await imageService.GetDescription(x)
+                    // uncomment this once we resize photos
+                    Description = string.Empty//imageService.GetDescription(x).Result
                 });
 
             var model = new IndexModel
