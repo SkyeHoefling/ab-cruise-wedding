@@ -14,20 +14,21 @@ namespace ABCruiseWedding.Controllers
         {
             var imageService = new ImageService();
 
-            var engagementImages = (await imageService.GetImages("engagement"))
-                .Select(x => new ImageModel
+            var engagementImages = (await imageService.GetImages("engagement-sm"))
+                .Select(async x => new ImageModel
                 {
                     Uri = x,
-                    Description = imageService.GetDescription(x).Result
-                });
+                    Description = await imageService.GetDescription(x)
+                })
+                .Select(t => t.Result);
 
-            var weddingImages = (await imageService.GetImages("photos"))
-                .Select(x => new ImageModel
+            var weddingImages = (await imageService.GetImages("photos-sm"))
+                .Select(async x => new ImageModel
                 {
                     Uri = x,
-                    // uncomment this once we resize photos
-                    Description = string.Empty//imageService.GetDescription(x).Result
-                });
+                    Description = await imageService.GetDescription(x)
+                })
+                .Select(t => t.Result);
 
             var model = new IndexModel
             {
