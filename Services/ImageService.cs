@@ -12,12 +12,12 @@ namespace ABCruiseWedding.Services
 {
     public class ImageService
     {
-        public async Task<IEnumerable<string>> GetImages()
+        public async Task<IEnumerable<string>> GetImages(string containerName)
         {
             var credentials = new StorageCredentials("abcruisewedding", "zh2vjSS6xAUnfCtp1RYtQcgDENlNKmR9CQ7PTaG14A1l8Ei79ytSduEnaBdZs9VM3c8hv8IdAt09dg08mVfjLA==");
             var storageAccount = new CloudStorageAccount(credentials, true);
             var blobClient = storageAccount.CreateCloudBlobClient();
-            var container = blobClient.GetContainerReference("photos");
+            var container = blobClient.GetContainerReference(containerName);
             var blobs = await container.ListBlobsSegmentedAsync(null);
             return blobs.Results.Select(x => x.Uri.AbsoluteUri);
         }

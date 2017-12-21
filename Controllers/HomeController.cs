@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ABCruiseWedding.Models;
@@ -13,22 +14,28 @@ namespace ABCruiseWedding.Controllers
         {
             var imageService = new ImageService();
 
-            var images = await imageService.GetImages();
-            var data = images
+            var engagementImages = (await imageService.GetImages("engagement"))
                 .Select(x => new ImageModel
                 {
                     Uri = x,
-                    Description = imageService.GetDescription(x).Result
+                    Description = string.Empty// imageService.GetDescription(x)
+                });
+
+            var weddingImages = (await imageService.GetImages("photos"))
+                .Select(x => new ImageModel
+                {
+                    Uri = x,
+                    Description = string.Empty//await imageService.GetDescription(x)
                 });
 
             var model = new IndexModel
             {
                 Countdown = GetCountdown(),
-                EngagementImages = data,
-                WeddingImages = data
+                EngagementImages = engagementImages,
+                WeddingImages = weddingImages
             };
 
-            return View(model);
+            return View(model);          
         }
 
         public CountdownModel GetCountdown(){
