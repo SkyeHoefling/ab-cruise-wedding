@@ -17,7 +17,7 @@ namespace ABCruiseWedding.Services
         public async Task<List<ImageModel>> GetImages(string container)
         {
             var client = new HttpClient();
-            client.BaseAddress = new Uri("https://abcruisewedding-functions.azurewebsites.net/api/HttpGetPhotos?code=Ed1WgMcqiI2Knik/0QmZ10vd93X5TK/SKFAdr1gSlPZVWQmfChbDsg==");
+            client.BaseAddress = new Uri($"https://abcruisewedding-functions.azurewebsites.net/api/HttpGetPhotos?code=Ed1WgMcqiI2Knik/0QmZ10vd93X5TK/SKFAdr1gSlPZVWQmfChbDsg==&container={container}");
             var response = await client.GetAsync("");
 
             if (response.Content != null)

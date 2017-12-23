@@ -14,13 +14,13 @@ namespace ABCruiseWedding.Controllers
         {
             var imageService = new ImageService();
 
-            //var engagementImages = processImages(await imageService.GetImages("engagement-sm"));
-            var weddingImages = await imageService.GetImages("photos");
+            var engagementImages = await imageService.GetImages("engagement");
+            var weddingImages = await imageService.GetImages("wedding");
 
             var model = new IndexModel
             {
                 Countdown = GetCountdown(),
-                EngagementImages = new ImageModel[0],
+                EngagementImages = engagementImages,
                 WeddingImages = weddingImages
             };
 
