@@ -81,6 +81,7 @@ table.cards {
     position: relative;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    display: table;
 }
 
 /*---[ The remaining is just more dressing to fit my preferances ]-----------------*/
