@@ -25,5 +25,33 @@
     text-decoration: none;
     color: #df6b72;
     font-family: "Karla";
-    font-size:2rem;
+    font-size:1.5rem;
+    padding:.5em;
+}
+
+.gallery .row a:hover {
+    background-color: #f0f0f0;
+}
+
+.gallery .card {
+    padding: 2em;
+}
+
+.gallery img.main {
+    height: 40em;
+}
+
+.gallery i {
+    color: #df6b72;
+    font-size: 5em;
+}
+
+.gallery i {
+    cursor: pointer;
+}
+
+.gallery .arrow {
+    height: 1em;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
