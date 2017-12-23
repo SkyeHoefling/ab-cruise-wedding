@@ -63,3 +63,7 @@
 .gallery .orbit-bullets {
     height: 8rem;
 }
+
+.gallery ul {
+    display: inline-block;
+}
