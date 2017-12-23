@@ -1,6 +1,6 @@
 galleryControl = {
     initialize: function(){
-        $('#gallery').DataTable({
+        $('#gallery-table').DataTable({
             "searching": false,
             "ordering": false,
             "info": true,

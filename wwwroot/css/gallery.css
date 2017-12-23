@@ -1,9 +1,9 @@
-.forum {
+.gallery {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.forum h1 {
+.gallery h1 {
     font-family: "PlayfairDisplay-Black";
     color: #4e4e4e;
     font-size:2.1875rem;
@@ -11,17 +11,17 @@
     margin-bottom: 25px;
 }
 
-.forum .row p{
+.gallery .row p{
     text-align: center;
     color:#777673;
     font-family: "Karla";
 }
 
-.forum .row {
+.gallery .row {
     text-align: center;    
 }
 
-.forum .row a {
+.gallery .row a {
     text-decoration: none;
     color: #df6b72;
     font-family: "Karla";
