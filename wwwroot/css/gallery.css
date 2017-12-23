@@ -50,8 +50,16 @@
     cursor: pointer;
 }
 
-.gallery .arrow {
-    height: 1em;
-    margin-top: 20%;
-    margin-bottom: 20%;
+.gallery .orbit-bullets button {
+    width: 11rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.gallery .orbit-bullets button .thumbnail:hover {
+    margin-bottom: 0.2em;
+}
+
+.gallery .orbit-bullets {
+    height: 8rem;
 }
