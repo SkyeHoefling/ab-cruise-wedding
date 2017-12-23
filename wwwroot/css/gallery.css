@@ -52,16 +52,27 @@
 
 .gallery .orbit-bullets button {
     width: 11rem;
-    height: 1.2rem;
+    height: auto;
     cursor: pointer;
+    background-color: transparent;
 }
 
-.gallery .orbit-bullets button .thumbnail:hover {
-    margin-bottom: 0.2em;
+.gallery .orbit-bullets img:hover {
+    margin-bottom: 1em;
 }
 
-.gallery .orbit-bullets {
-    height: 8rem;
+.gallery .slick-arrow::before {
+    color: #df6b72;
+}
+
+.gallery .slick-prev::before {
+    float: left;
+    margin-left: 6px;
+}
+
+.gallery .slick-next::before {
+    float: right;
+    margin-right: 6px;
 }
 
 .gallery ul {
