@@ -1,0 +1,12 @@
+@using ABCruiseWedding.Models
+@model ModalModel
+
+<div class="reveal" id="@Model.Id" data-reveal>
+    <h2>@Model.Title</h2>
+    <div>
+        @Html.Raw(Model.Content)
+    </div>
+    <button class="close-button" data-close aria-label="Close" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>

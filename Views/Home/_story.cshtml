@@ -1,3 +1,4 @@
+@using System
 @using ABCruiseWedding.Models
 @model IndexModel
 
@@ -65,14 +66,16 @@
                             <tbody>
                                 @foreach(var image in Model.WeddingImages)
                                 {
+                                    var id = Guid.NewGuid().ToString();
                                     <tr>
-                                        <td>
+                                        <td data-open="@id">
                                             <div class="card">
                                                 <img src="@image.Uri" />
                                                 <div class="card-divider">
                                                     @image.Category
                                                 </div>        
                                             </div>
+                                            @await Html.PartialAsync("_modal", new ModalModel { Id = id, Title = @image.Category, Content = $"<img class=\"modal-img\" src=\"{@image.Uri}\" />" })
                                         </td>
                                     </tr>
                                 }
