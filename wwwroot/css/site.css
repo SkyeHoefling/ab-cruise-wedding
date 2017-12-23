@@ -75,6 +75,14 @@ table.cards {
     text-align: left;
 }
 
+.cards tbody img {
+    max-width: none;
+    left:50%;
+    position: relative;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
 /*---[ The remaining is just more dressing to fit my preferances ]-----------------*/
 .table {
     background-color: #fff;

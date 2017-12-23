@@ -14,28 +14,17 @@ namespace ABCruiseWedding.Controllers
         {
             var imageService = new ImageService();
 
-            var engagementImages = processImages(await imageService.GetImages("engagement-sm"));
-            var weddingImages = processImages(await imageService.GetImages("photos-sm"));
+            //var engagementImages = processImages(await imageService.GetImages("engagement-sm"));
+            var weddingImages = await imageService.GetImages("photos");
 
             var model = new IndexModel
             {
                 Countdown = GetCountdown(),
-                EngagementImages = engagementImages,
+                EngagementImages = new ImageModel[0],
                 WeddingImages = weddingImages
             };
 
-            return View(model);  
-
-            IEnumerable<ImageModel> processImages(IEnumerable<string> images)
-            {
-                return images
-                    .Select(async x => new ImageModel
-                    {
-                        Uri = x,
-                        Description = await imageService.GetDescription(x)
-                    })
-                    .Select(t => t.Result);
-            }        
+            return View(model);
         }
 
         public CountdownModel GetCountdown(){
