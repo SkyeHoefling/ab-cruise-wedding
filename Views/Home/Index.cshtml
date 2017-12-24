@@ -54,7 +54,7 @@
 
         $(document).ready(function(){
             itineraryMap.initialize();
-            galleryControl.initialize();
+            galleryControl.initialize('@Url.Action("Gallery", "Home")');
         });
 
         var mailto = function(){

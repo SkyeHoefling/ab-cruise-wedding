@@ -2,22 +2,21 @@
     <div class="row">
         <h1>Image Gallery</h1>
         <div class="card">
-            <div class="row">
-                @await Html.PartialAsync("_galleryControl")
+            <div id="gallery-wrapper" class="row">
             </div>
             <div class="row">
                 <hr />         
                 <ul class="hide-for-small-only horizontal menu">
-                    <li><a href="#gallery">Engagement</a></li>
-                    <li><a href="#gallery">Wedding</a></li>
-                    <li><a href="#gallery">Group Shots</a></li>
-                    <li><a href="#gallery">Misc.</a></li>
+                    <li><a onclick="galleryControl.update('Engagement');">Engagement</a></li>
+                    <li><a onclick="galleryControl.update('Wedding');">Wedding</a></li>
+                    <li><a onclick="galleryControl.update('Group Shots');">Group Shots</a></li>
+                    <li><a onclick="galleryControl.update('Misc.');">Misc.</a></li>
                 </ul>           
                 <ul class="hide-for-medium vertical menu">
-                    <li><a href="#gallery">Engagement</a></li>
-                    <li><a href="#gallery">Wedding</a></li>
-                    <li><a href="#gallery">Group Shots</a></li>
-                    <li><a href="#gallery">Misc.</a></li>
+                    <li><a onclick="galleryControl.update('Engagement');">Engagement</a></li>
+                    <li><a onclick="galleryControl.update('Wedding');">Wedding</a></li>
+                    <li><a onclick="galleryControl.update('Group Shots');">Group Shots</a></li>
+                    <li><a onclick="galleryControl.update('Misc.');">Misc.</a></li>
                 </ul>           
             </div>
         </div>

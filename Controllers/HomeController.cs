@@ -54,6 +54,11 @@ namespace ABCruiseWedding.Controllers
             return View();
         }
 
+        public IActionResult Gallery(string container)
+        {
+            return PartialView("GalleryControl");
+        }
+
         public IActionResult Error()
         {
             return View();
