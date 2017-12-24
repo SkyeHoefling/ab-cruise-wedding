@@ -21,7 +21,8 @@ namespace ABCruiseWedding.Controllers
             {
                 Countdown = GetCountdown(),
                 EngagementImages = engagementImages,
-                WeddingImages = weddingImages
+                WeddingImages = weddingImages,
+                GalleryCategories = new [] { "Engagement", "Wedding", "Group", "Misc" }
             };
 
             return View(model);

@@ -1,6 +1,6 @@
 galleryControl = {
     uri: '',
-    initialize: function(updateUri){
+    initialize: function(updateUri, container){
         $('#gallery-table').DataTable({
             "searching": false,
             "ordering": false,
@@ -9,7 +9,7 @@ galleryControl = {
         });        
 
         galleryControl.uri = updateUri;
-        galleryControl.update('Engagement');
+        galleryControl.update(container);
     },
     update: function(container){
         $('#gallery-wrapper').load(galleryControl.uri + '?container=' + container, function(){
