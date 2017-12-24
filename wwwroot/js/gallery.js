@@ -15,7 +15,8 @@ galleryControl = {
         $('#gallery-wrapper').load(galleryControl.uri + '?container=' + container, function(){
             $('#orbit-gallery').foundation();
             $('#gallery-thumbnail-carousel').slick({
-                slidesToShow: 4
+                slidesToShow: 4,
+                adaptiveHeight: true
             });
         });
     }

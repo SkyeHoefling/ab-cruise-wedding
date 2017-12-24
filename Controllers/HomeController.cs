@@ -13,16 +13,12 @@ namespace ABCruiseWedding.Controllers
         public async Task<IActionResult> Index()
         {
             var imageService = new ImageService();
-
-            var engagementImages = await imageService.GetImages("engagement");
-            var weddingImages = await imageService.GetImages("wedding");
+            var categories = await imageService.GetCategories();
 
             var model = new IndexModel
             {
                 Countdown = GetCountdown(),
-                EngagementImages = engagementImages,
-                WeddingImages = weddingImages,
-                GalleryCategories = new [] { "Engagement", "Wedding", "Group", "Misc" }
+                GalleryCategories = categories 
             };
 
             return View(model);
@@ -55,9 +51,11 @@ namespace ABCruiseWedding.Controllers
             return View();
         }
 
-        public IActionResult Gallery(string container)
+        public async Task<IActionResult> Gallery(string container)
         {
-            return PartialView("GalleryControl");
+            var imageService = new ImageService();
+            var images = await imageService.GetImages(container.ToLower());
+            return PartialView("GalleryControl", images);
         }
 
         public IActionResult Error()

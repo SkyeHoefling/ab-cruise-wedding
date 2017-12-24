@@ -14,6 +14,12 @@ namespace ABCruiseWedding.Services
 {
     public class ImageService
     {
+        public async Task<List<String>> GetCategories()
+        {
+            await Task.Delay(1);
+            return new List<string> { "Wedding", "Engagement", "Group", "Misc" };
+        }
+
         public async Task<List<ImageModel>> GetImages(string container)
         {
             var client = new HttpClient();

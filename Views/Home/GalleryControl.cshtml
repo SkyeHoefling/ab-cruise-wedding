@@ -1,3 +1,7 @@
+@using ABCruiseWedding.Models
+@using System.Collections.Generic
+@model IEnumerable<ImageModel>
+
 <div class="orbit" id="orbit-gallery" role="region" aria-label="Favorite Space Pictures" data-orbit>
     <div class="orbit-wrapper">
         <div class="orbit-controls">
@@ -5,65 +9,29 @@
         <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i class="fi-arrow-right"></i></button>
         </div>
         <ul class="orbit-container">
-            <li class="is-active orbit-slide">
-                <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://abcruisewedding.blob.core.windows.net/photos/cruise_002.jpg" alt="Space">
-                    <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
-                </figure>
-            </li>
-            <li class="orbit-slide">
-                <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://abcruisewedding.blob.core.windows.net/photos/cruise_002.jpg" alt="Space">
-                    <figcaption class="orbit-caption">Lets Rocket!</figcaption>
-                </figure>
-            </li>
-            <li class="orbit-slide">
-                <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://abcruisewedding.blob.core.windows.net/photos/cruise_002.jpg" alt="Space">
-                    <figcaption class="orbit-caption">Encapsulating</figcaption>
-                </figure>
-            </li>
-            <li class="orbit-slide">
-                <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://abcruisewedding.blob.core.windows.net/photos/cruise_002.jpg" alt="Space">
-                    <figcaption class="orbit-caption">Outta This World</figcaption>
-                </figure>
-            </li>
-            <li class="orbit-slide">
-                <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://abcruisewedding.blob.core.windows.net/photos/cruise_002.jpg" alt="Space">
-                    <figcaption class="orbit-caption">Outta This World</figcaption>
-                </figure>
-            </li>
-            <li class="orbit-slide">
-                <figure class="orbit-figure">
-                    <img class="orbit-image" src="https://abcruisewedding.blob.core.windows.net/photos/cruise_002.jpg" alt="Space">
-                    <figcaption class="orbit-caption">Outta This World</figcaption>
-                </figure>
-            </li>
+            @foreach(var image in @Model)
+            {
+                <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="@image.MediumUri" alt="Space">
+                        <figcaption class="orbit-caption">@image.Category</figcaption>
+                    </figure>
+                </li>
+            }
         </ul>
     </div>
     <div class="hide-for-small-only">
         <hr />
         <div id="gallery-thumbnail-carousel" class="orbit-bullets">
-            <button data-slide="0">
-                <img class="thumbnail" src="https://abcruisewedding.blob.core.windows.net/photos/cruise_002.jpg" />
-            </button>
-            <button data-slide="1">
-                <img class="thumbnail" src="https://abcruisewedding.blob.core.windows.net/photos/cruise_002.jpg" />
-            </button>
-            <button data-slide="2">
-                <img class="thumbnail" src="https://abcruisewedding.blob.core.windows.net/photos/cruise_002.jpg" />
-            </button>
-            <button data-slide="3">
-                <img class="thumbnail" src="https://abcruisewedding.blob.core.windows.net/photos/cruise_002.jpg" />
-            </button>
-            <button data-slide="4">
-                <img class="thumbnail" src="https://abcruisewedding.blob.core.windows.net/photos/cruise_002.jpg" />
-            </button>
-            <button data-slide="5">
-                <img class="thumbnail" src="https://abcruisewedding.blob.core.windows.net/photos/cruise_002.jpg" />
-            </button>
+            @{
+                var images = Model.ToArray();
+                for (int index = 0; index < images.Length; index++)
+                {
+                    <button data-slide="@index">
+                        <img class="thumbnail" src="@images[index].Thumbnail" />
+                    </button>
+                }
+            }
         </div>
     </div>
 </div>

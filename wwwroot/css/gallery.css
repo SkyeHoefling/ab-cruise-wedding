@@ -78,3 +78,15 @@
 .gallery ul {
     display: inline-block;
 }
+
+.gallery .orbit-image {
+    height: 33em;
+}
+
+.gallery .orbit-next {
+    top: 25%;
+}
+
+.gallery .orbit-previous {
+    top: 25%;
+}
