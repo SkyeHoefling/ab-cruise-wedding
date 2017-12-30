@@ -90,6 +90,7 @@
         <script src="~/lib/openlayers/ol-debug.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
         <script src="~/js/itineraryMap.js" asp-append-version="true"></script>
+        <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '710edeed-0d55-47eb-9e32-f1995757d07f', f: true }); done = true; } }; })();</script>
     </environment>
     <environment names="Staging,Production">
         <script src="~/lib/foundation/js/vendor/jquery.js"></script>
@@ -98,6 +99,7 @@
         <script src="~/lib/foundation/js/app.js"></script>
         <script src="~/lib/openlayers/ol.js"></script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '710edeed-0d55-47eb-9e32-f1995757d07f', f: true }); done = true; } }; })();</script>
     </environment>
 
     @RenderSection("Scripts", required: false)
