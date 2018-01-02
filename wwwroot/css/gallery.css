@@ -83,6 +83,13 @@
     height: 33em;
 }
 
+@media (max-width: 640px){
+    .gallery .orbit-image {
+        height: auto;
+        width: auto;
+    }
+}
+
 .gallery .orbit-next {
     top: 25%;
 }

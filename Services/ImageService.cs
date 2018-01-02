@@ -17,7 +17,7 @@ namespace ABCruiseWedding.Services
         public async Task<List<String>> GetCategories()
         {
             await Task.Delay(1);
-            return new List<string> { "Wedding", "Engagement", "Other" };
+            return new List<string> { "Wedding", "Engagement" };
         }
 
         public async Task<List<ImageModel>> GetImages(string container)

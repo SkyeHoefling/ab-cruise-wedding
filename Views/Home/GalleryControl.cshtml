@@ -11,10 +11,10 @@
         <ul class="orbit-container">
             @foreach(var image in @Model)
             {
-                <li class="orbit-slide">
+                <li class="orbit-slide">                
                     <figure class="orbit-figure">
                         <img class="orbit-image" src="@image.MediumUri" alt="Space">
-                        <figcaption class="orbit-caption">@image.Category</figcaption>
+                        @*<figcaption class="orbit-caption">@image.Category</figcaption>*@
                     </figure>
                 </li>
             }
